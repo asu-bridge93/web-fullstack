@@ -1,0 +1,11 @@
+echo $SHELL
+mkdir /tmp/missing
+man touch
+touch /tmp/missing/semester.txt
+echo '#!/bin/sh' > /tmp/missing/semester.txt
+echo 'curl --head --silent https://missing.csail.mit.edu' >> /tmp/missing/semester.txt
+cd tmp/missing
+./semester.txt
+sh semester.txt
+man chmod
+chmod +x /tmp/missing/semester.txt
